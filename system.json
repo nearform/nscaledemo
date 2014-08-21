@@ -1,6 +1,6 @@
 {
   "sshKeyPath": "",
-  "name": "nfd-demo",
+  "name": "nfddemo",
   "namespace": "demo",
   "id": "f0033600-36aa-4820-8006-83e90cc20e5e",
   "containerDefinitions": [
@@ -10,7 +10,7 @@
       "dependencies": {
       },
       "specific": {
-        "repositoryUrl": "git@github.com:nearform/nfd-demo.git",
+        "repositoryUrl": "git@github.com:nearform/nfddemo.git",
         "buildScript": "web/build.sh",
         "arguments": "-e WEB_HOST=localhost -p 8000:8000 -d __TARGETNAME__ sh /web/run.sh",
         "buildHead": 1,

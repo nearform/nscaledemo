@@ -1,6 +1,6 @@
 {
   "name": "web",
-  "description": "Example web app for nfd-demo",
+  "description": "Example web app for nfddemo",
   "version": "0.0.1",
   "main": "app.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nearform/nfd-demo.git"
+    "url": "https://github.com/nearform/nfddemo.git"
   },
   "dependencies": {
     "ejs": "^1.0.0",

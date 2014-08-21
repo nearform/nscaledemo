@@ -1,5 +1,5 @@
 
-# nfd-demo
+# nfddemo
 
 nfd demo project
 
@@ -7,5 +7,5 @@ nfd demo project
 
 Depends on [nfd](https://github.com/nearform/nfd).
 
-To clone demo execute `nfd clone git@github.com:nearform/nfd-demo.git`
+To clone demo execute `nfd clone git@github.com:nearform/nfddemo.git`
 

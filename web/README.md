@@ -1,3 +1,3 @@
 # web
 
-Example web app for nfd-demo
+Example web app for nfddemo
