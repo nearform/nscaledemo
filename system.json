@@ -20,7 +20,7 @@
       "specific": {
         "repositoryUrl": "git@github.com:nearform/nfddemo.git",
         "buildScript": "web/build.sh",
-        "arguments": "-e WEB_HOST=localhost -p 8000:8000 -d __TARGETNAME__ sh /web/run.sh",
+        "arguments": "-e WEB_HOST=localhost -p 8000:8000 -d __TARGETNAME__ sh run.sh",
         "buildHead": 1,
         "binary": "/tmp/nfd/nfddemo/builds/web-0",
         "dockerImageId": "5b04b4d648fc388128d4271b4e6ba3053047ca537b0e0820de81c273a2c74e93"
