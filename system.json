@@ -5,6 +5,14 @@
   "id": "e1144711-47bb-5931-9117-94f01dd20f6f",
   "containerDefinitions": [
     {
+      "name": "Machine",
+      "type": "aws-ami",
+      "specific": {
+        "repositoryToken": "04551b154404a852e663aba4c3fa299e04f6e8a5"
+      },
+      "id": "85d99b2c-06d0-5485-9501-4d4ed429799c"
+    },
+    {
       "name": "web",
       "type": "docker",
       "dependencies": {
@@ -25,11 +33,22 @@
     "containers": {
       "10": {
         "id": "10",
+        "containerDefinitionId": "85d99b2c-06d0-5485-9501-4d4ed429799c",
+        "containedBy": "10",
+        "contains": [
+          "20"
+        ],
+        "specific": {
+          "ipaddress": "localhost"
+        }
+      },
+      "20": {
+        "id": "20",
         "containerDefinitionId": "9ddc6c027-9ce2-5fdg-9936-696d2b3789bb",
         "containedBy": "10",
         "contains": [],
         "specific": {
-          "ipaddress": "localhost"
+          
         }
       }
     }
