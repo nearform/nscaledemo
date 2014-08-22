@@ -2,7 +2,7 @@
   "sshKeyPath": "",
   "name": "nfddemo",
   "namespace": "demo",
-  "id": "f0033600-36aa-4820-8006-83e90cc20e5e",
+  "id": "e1144711-47bb-5931-9117-94f01dd20f6f",
   "containerDefinitions": [
     {
       "name": "web",
@@ -17,7 +17,7 @@
         "binary": "/tmp/nfd/nfddemo/builds/web-0",
         "dockerImageId": "5b04b4d648fc388128d4271b4e6ba3053047ca537b0e0820de81c273a2c74e93"
       },
-      "id": "8cb5b916-8bd1-4ecf-8825-585c1a2678aa",
+      "id": "9ddc6c027-9ce2-5fdg-9936-696d2b3789bb",
       "version": "0.0.0"
     }
   ],
@@ -25,7 +25,7 @@
     "containers": {
       "10": {
         "id": "10",
-        "containerDefinitionId": "8cb5b916-8bd1-4ecf-8825-585c1a2678aa",
+        "containerDefinitionId": "9ddc6c027-9ce2-5fdg-9936-696d2b3789bb",
         "containedBy": "10",
         "contains": []
       }
