@@ -1,7 +1,7 @@
 {
   "sshKeyPath": "",
-  "name": "nfddemo",
-  "namespace": "nfddemo",
+  "name": "nscaledemo",
+  "namespace": "nscaledemo",
   "id": "e1144711-47bb-5931-9117-94f01dd20f6f",
   "containerDefinitions": [
     {
@@ -17,7 +17,7 @@
       "type": "boot2docker",
       "dependencies": {},
       "specific": {
-        "repositoryUrl": "git@github.com:nearform/nfddemo.git",
+        "repositoryUrl": "git@github.com:nearform/nscaledemo.git",
         "buildScript": "web/build.sh",
         "arguments": "-e WEB_HOST=localhost -p 8000:8000 -d __TARGETNAME__ sh run.sh",
         "buildHead": 2,
