@@ -1,58 +1,48 @@
 {
-  "sshKeyPath": "",
   "name": "nscaledemo",
   "namespace": "nscaledemo",
   "id": "e1144711-47bb-5931-9117-94f01dd20f6f",
   "containerDefinitions": [
     {
-      "name": "Machine",
       "type": "blank-container",
-      "specific": {
-        "repositoryToken": "04551b154404a852e663aba4c3fa299e04f6e8a5"
-      },
-      "id": "85d99b2c-06d0-5485-9501-4d4ed429799c"
+      "id": "85d99b2c-06d0-5485-9501-4d4ed429799c",
+      "name": "root"
     },
     {
-      "name": "web",
       "type": "docker",
-      "dependencies": {},
       "specific": {
-        "repositoryUrl": "git@github.com:nearform/nscaledemo.git",
-        "buildScript": "web/build.sh",
-        "arguments": "-e WEB_HOST=localhost -p 8000:8000 -d __TARGETNAME__ sh run.sh",
-        "buildHead": 2,
-        "binary": "/Users/pelger/work/nearform/code/product/nfddata/build/nfddemo/builds/web-1",
-        "dockerImageId": "3369fa5cb44a5f193316d769c40f4c8fbf66b98c115e103cb38b0d2844f06dc6"
+        "repositoryUrl": "git@github.com:nearform/nscaledemoweb.git",
+        "execute": {
+          "args": "-p 8000:8000 -d",
+          "exec": "/usr/bin/node index.js"
+        },
+        "buildHead": 1
       },
-      "id": "9ddc6c027-9ce2-5fdg-9936-696d2b3789bb",
-      "version": "0.0.1"
+      "id": "web",
+      "name": "web"
     }
   ],
   "topology": {
     "containers": {
-      "10": {
-        "id": "10",
+      "root-16f4f95b": {
+        "id": "root-16f4f95b",
+        "containedBy": "root-16f4f95b",
         "containerDefinitionId": "85d99b2c-06d0-5485-9501-4d4ed429799c",
-        "containedBy": "10",
+        "type": "blank-container",
         "contains": [
-          "8bd49b5b-3bd9-4314-8895-a2ec26e28175"
+          "web-c31f912e"
         ],
         "specific": {
           "ipaddress": "localhost"
         }
       },
-      "8bd49b5b-3bd9-4314-8895-a2ec26e28175": {
-        "id": "8bd49b5b-3bd9-4314-8895-a2ec26e28175",
-        "containerDefinitionId": "9ddc6c027-9ce2-5fdg-9936-696d2b3789bb",
-        "containedBy": "10",
+      "web-c31f912e": {
+        "id": "web-c31f912e",
+        "containedBy": "root-16f4f95b",
+        "containerDefinitionId": "web",
+        "type": "docker",
         "contains": [],
-        "specific": {
-          "dockerImageId": "3369fa5cb44a5f193316d769c40f4c8fbf66b98c115e103cb38b0d2844f06dc6",
-          "containerBinary": "/Users/pelger/work/nearform/code/product/nfddata/build/nfddemo/builds/web-1",
-          "dockerLocalTag": "nfddemo/web-1",
-          "buildNumber": 1,
-          "version": "0.0.1"
-        }
+        "specific": {}
       }
     }
   }
