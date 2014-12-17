@@ -3,7 +3,7 @@
 Hello world project for nscale.
 
 ##overview
-nscaledemo is a minimalisit nscale sytem definition defining just one hello world web service and consists of the following files:
+nscaledemo is a minimalist nscale sytem definition defining just one hello world web service and consists of the following files:
 
 ###system.js
 
