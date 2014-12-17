@@ -3,7 +3,7 @@
 Hello world project for nscale.
 
 ##overview
-nscaledemo is a minimalisit nscale sytem definition defining just one hellow world web service and consists of the following files:
+nscaledemo is a minimalist nscale sytem definition defining just one hello world web service and consists of the following files:
 
 ###system.js
 
@@ -37,7 +37,7 @@ Defines the system namespace, name and id. Also defines a simple topology for lo
   		}
 	};
 
-Deines a root conainer and a web container to hold the hello world application.
+Defines a root container and a web container to hold the hello world application.
 
 ###map.js
 
