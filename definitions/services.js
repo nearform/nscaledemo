@@ -5,8 +5,7 @@ exports.root = {
 exports.web = {
   type: 'process',
   specific: {
-    //repositoryUrl: 'git@github.com:nearform/nscaledemoweb.git',
-    repositoryUrl: 'git@github.com:kamil-mech/nscaledemoweb.git',
+    repositoryUrl: 'git@github.com:nearform/nscaledemoweb.git',
     execute: {
       args: '-p 8000:8000 -d',
       exec: 'node index.js'
