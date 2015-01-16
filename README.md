@@ -19,7 +19,7 @@ nscaledemo is a minimalist nscale sytem definition defining just one hello world
 	
 Defines the system namespace, name and id. Also defines a simple topology for local deployment.
 
-
+ 
 ###definitions/services.js
 
 	exports.root = {
