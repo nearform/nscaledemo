@@ -11,7 +11,7 @@
     {
       "type": "docker",
       "specific": {
-        "repositoryUrl": "https://github.com/kamil-mech/nscaledemoweb",
+        "repositoryUrl": "git@github.com:kamil-mech/nscaledemoweb.git",
         "execute": {
           "args": "-p 8000:8000 -d",
           "exec": "node index.js"
@@ -45,7 +45,7 @@
         "type": "docker",
         "contains": [],
         "specific": {
-          "repositoryUrl": "https://github.com/kamil-mech/nscaledemoweb",
+          "repositoryUrl": "git@github.com:kamil-mech/nscaledemoweb.git",
           "execute": {
             "args": "-p 8000:8000 -d",
             "exec": "node index.js"
