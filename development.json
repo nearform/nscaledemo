@@ -5,7 +5,7 @@
   "containerDefinitions": [
     {
       "type": "blank-container",
-      "id": "85d99b2c-06d0-5485-9501-4d4ed429799c",
+      "id": "root",
       "name": "root"
     },
     {
@@ -27,7 +27,7 @@
       "root-16f4f95b": {
         "id": "root-16f4f95b",
         "containedBy": "root-16f4f95b",
-        "containerDefinitionId": "85d99b2c-06d0-5485-9501-4d4ed429799c",
+        "containerDefinitionId": "root",
         "type": "blank-container",
         "contains": [
           "web-c31f912e$45349ac55c2483364dc550b9f207daa4cae541bc"
@@ -50,6 +50,6 @@
         }
       }
     },
-    "name": "local"
+    "name": "development"
   }
 }
