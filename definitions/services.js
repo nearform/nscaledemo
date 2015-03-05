@@ -1,9 +1,9 @@
 exports.root = {
-  type: 'container'
+  type: 'blank-container'
 };
 
 exports.web = {
-  type: 'process',
+  type: 'docker',
   specific: {
     repositoryUrl: 'git@github.com:nearform/nscaledemoweb.git',
     execute: {

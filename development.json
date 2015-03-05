@@ -1,0 +1,55 @@
+{
+  "name": "nscaledemo",
+  "namespace": "nscaledemo",
+  "id": "e1144711-47bb-5931-9117-94f01dd20f6f",
+  "containerDefinitions": [
+    {
+      "type": "blank-container",
+      "id": "root",
+      "name": "root"
+    },
+    {
+      "type": "docker",
+      "specific": {
+        "repositoryUrl": "git@github.com:nearform/nscaledemoweb.git",
+        "execute": {
+          "args": "-p 8000:8000 -d",
+          "exec": "node index.js"
+        },
+        "commit": "45349ac55c2483364dc550b9f207daa4cae541bc"
+      },
+      "id": "web$45349ac55c2483364dc550b9f207daa4cae541bc",
+      "name": "web"
+    }
+  ],
+  "topology": {
+    "containers": {
+      "root-16f4f95b": {
+        "id": "root-16f4f95b",
+        "containedBy": "root-16f4f95b",
+        "containerDefinitionId": "root",
+        "type": "blank-container",
+        "contains": [
+          "web-c31f912e$45349ac55c2483364dc550b9f207daa4cae541bc"
+        ],
+        "specific": {}
+      },
+      "web-c31f912e$45349ac55c2483364dc550b9f207daa4cae541bc": {
+        "id": "web-c31f912e$45349ac55c2483364dc550b9f207daa4cae541bc",
+        "containedBy": "root-16f4f95b",
+        "containerDefinitionId": "web$45349ac55c2483364dc550b9f207daa4cae541bc",
+        "type": "docker",
+        "contains": [],
+        "specific": {
+          "repositoryUrl": "git@github.com:nearform/nscaledemoweb.git",
+          "execute": {
+            "args": "-p 8000:8000 -d",
+            "exec": "node index.js"
+          },
+          "commit": "45349ac55c2483364dc550b9f207daa4cae541bc"
+        }
+      }
+    },
+    "name": "development"
+  }
+}
