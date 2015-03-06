@@ -60,7 +60,7 @@ Holds minimal id and name mapping for the web service container.
 ###generated files
 The following files are generated and managed by nscale:
 
-<target-name>.json - compiled system definition, built from system.js and files underneath the services repo
+`<target-name>.json` - compiled system definition, built from system.js and files underneath the services repo
 
 # usage
 Full instructions on how to build and run nscaledemo are available in the nscale workshops here: https://github.com/nearform/nscale-workshop
