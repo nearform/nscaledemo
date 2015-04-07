@@ -15,7 +15,7 @@ exports.web = {
     execute: {
       args: '-p 8000:8000 -d',
       exec: '',
-      process: 'index.js'
+      process: 'npm start'
     }
   }
 };
